@@ -319,10 +319,6 @@ document.getElementById('runBtn').addEventListener('click', function() {
                     if (allowAutomaticCheckRun === true) {
                         runAllChecks(false, false);
                     }
-                } else {
-                    outputContainer.innerText = `${popupi18.errorpopup}: ${data.output || data.error}`;
-                    outputContainer.setAttribute('data-exec-time', "null");
-                    outputContainer.setAttribute('data-memory-usage', "null");
                 }
             })
     }

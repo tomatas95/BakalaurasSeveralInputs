@@ -17,7 +17,7 @@
         "body-parser": "^1.20.2",
         "child_process": "^1.0.2",
         "cors": "^2.8.5",
-        "express": "^4.19.2",
+        "express": "^4.21.0",
         "tinymce": "^7.2.1"
     }
 }

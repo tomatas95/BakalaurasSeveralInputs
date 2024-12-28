@@ -36,8 +36,6 @@ class UserController extends Controller
         $user->skills = $user->skills ?? __('Not specified');
         $user->description = $user->description ?? __('Not specified');
 
-    // SELECT DATE_FORMAT(created_at, '%Y-%m-%d') as date, COUNT(*) as count FROM submissions
-    // GROUP BY DATE_FORMAT(created_at, '%Y-%m-%d') ORDER BY date ASC;
         $createdExercises = Exercise::selectRaw('DATE_FORMAT(created_at, "%Y-%m-%d") as date, COUNT(*) as count')
         ->where('user_id', $user->id)
         ->groupBy('date')

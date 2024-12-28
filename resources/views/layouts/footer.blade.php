@@ -23,7 +23,7 @@
                     @endguest
                     @auth
                     <li><a href="/index">{{ __("Dashboard") }}</a></li>
-                    <li><a href="/create">{{ __("Create Exercise") }}</a></li>
+                    <li><a href="/exercises/create">{{ __("Create Exercise") }}</a></li>
                     <li><a href="/users/my-profile">{{ __("My Profile") }}</a></li>
                     @endauth
                 </ul>
